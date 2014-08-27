@@ -38,9 +38,22 @@ curl https://sublime.wbond.net/Package%20Control.sublime-package -o ~/Library/Ap
 # git
 brew install git
 
+# p4merge
+brew cask install p4merge
+
 # git configuration
 git config --global user.name "$NAME"
 git config --global user.email "$EMAIL"
+git config --global push.default matching
+git config --global core.safecrlf false
+git config --global merge.keepBackup false;
+git config --global merge.tool p4merge;
+git config --global mergetool.p4merge.cmd p4merge "\"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\""
+git config --global mergetool.p4merge.keepTemporaries false
+git config --global mergetool.p4merge.trustExitCode false
+git config --global mergetool.p4merge.keepBackup false
+git config --global mergetool.p4merge.prompt false
+git config --global mergetool.keepBackup false
 
 # nvm
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
