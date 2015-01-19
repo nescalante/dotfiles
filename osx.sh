@@ -76,6 +76,9 @@ npm install -g testling
 # hub
 brew install --HEAD hub
 
+# postgre
+brew install postgresql
+
 # mongodb
 brew install mongodb
 
@@ -94,6 +97,9 @@ brew cask install skype
 
 # iterm
 brew cask install iterm2
+
+# nginx
+brew install nginx
 
 # refresh any finder windows
 killall Finder
