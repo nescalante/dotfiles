@@ -46,6 +46,15 @@ git config --global mergetool.p4merge.keepBackup false
 git config --global mergetool.p4merge.prompt false
 git config --global mergetool.keepBackup false
 
+# generate ssh keys
+ssh-keygen -t rsa -C "nlante@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+pbcopy < ~/.ssh/id_rsa.pub
+echo "RSA key was just copied, see https://help.github.com/articles/generating-ssh-keys/ to add it to the GitHub account"
+read -p "Press [Enter] when ready..."
+ssh -T git@github.com
+
 # nvm
 curl https://raw.githubusercontent.com/creationix/nvm/v0.22.2/install.sh | bash
 
