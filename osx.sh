@@ -92,5 +92,8 @@ brew cask install google-chrome
 # skype
 brew cask install skype
 
+# iterm
+brew cask install iterm2
+
 # refresh any finder windows
 killall Finder
