@@ -33,8 +33,8 @@ brew install git
 brew cask install p4merge
 
 # git configuration
-git config --global user.name "$NAME"
-git config --global user.email "$EMAIL"
+git config --global user.name "Nicolas Escalante"
+git config --global user.email "nlante@gmail.com"
 git config --global push.default matching
 git config --global core.safecrlf false
 git config --global merge.keepBackup false;
@@ -47,16 +47,17 @@ git config --global mergetool.p4merge.prompt false
 git config --global mergetool.keepBackup false
 
 # nvm
-curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+curl https://raw.githubusercontent.com/creationix/nvm/v0.22.2/install.sh | bash
+
+echo 'source ~/.nvm/nvm.sh' >> ~/.profile
 
 # node
 nvm install 0.10.23
 nvm alias default 0.10.23
 
 # add author info to npm
-echo "Adding npm publisher information"
-npm set init.author.name "$NAME"
-npm set init.author.email "$EMAIL"
+npm set init.author.name "Nicolas Escalante"
+npm set init.author.email "nlante@gmail.com"
 npm adduser
 
 # npm global CLI treats
@@ -66,10 +67,14 @@ npm install -g bower
 npm install -g yo
 npm install -g grunt-cli
 npm install -g grunt-init
+npm install -g gulp
 npm install -g nodemon
 npm install -g browserify
 npm install -g watchify
 npm install -g testling
+
+# hub
+brew install --HEAD hub
 
 # mongodb
 brew install mongodb
@@ -86,9 +91,6 @@ brew cask install google-chrome
 
 # skype
 brew cask install skype
-
-# openoffice
-brew cask install openoffice
 
 # refresh any finder windows
 killall Finder
