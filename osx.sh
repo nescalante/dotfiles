@@ -82,6 +82,9 @@ npm install -g browserify
 npm install -g watchify
 npm install -g testling
 
+# ohmyzsh
+wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+
 # hub
 brew install --HEAD hub
 
