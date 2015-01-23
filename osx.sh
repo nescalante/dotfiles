@@ -35,7 +35,7 @@ brew cask install p4merge
 # git configuration
 git config --global user.name "Nicolas Escalante"
 git config --global user.email "nlante@gmail.com"
-git config --global push.default matching
+git config --global push.default current
 git config --global core.safecrlf false
 git config --global merge.keepBackup false;
 git config --global merge.tool p4merge;
