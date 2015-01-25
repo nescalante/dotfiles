@@ -17,6 +17,9 @@ brew install python
 # install zsh
 brew install zsh
 
+# zsh as default
+chsh -s /bin/zsh
+
 # quicksilver
 brew cask install quicksilver
 
