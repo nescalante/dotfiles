@@ -17,6 +17,9 @@ brew install python
 # install zsh
 brew install zsh
 
+# jq
+brew install jq
+
 # zsh as default
 chsh -s /bin/zsh
 
