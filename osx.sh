@@ -8,7 +8,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
 # vscode
-brew install vscode
+brew install --cask visual-studio-code
 
 # node
 nvm install 12
