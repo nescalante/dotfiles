@@ -14,3 +14,6 @@ brew install --cask visual-studio-code
 nvm install 12
 nvm install 14
 nvm alias default 12
+
+# java
+brew install openjdk@11
